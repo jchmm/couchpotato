@@ -8,6 +8,8 @@ RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /root/CouchPot
 
 ENV PATH /root/CouchPotatoServer/:$PATH
 
-EXPOSE 5050
+VOLUME ["/data"]
 
-ENTRYPOINT ["CouchPotato.py"]
+expose 5050
+
+CMD ["CouchPotato.py","--data_dir","/data"]
