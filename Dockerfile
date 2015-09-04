@@ -6,7 +6,7 @@ python
 
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /root/CouchPotatoServer
 
-ENV PATH /root/CouchPotatoServer/:$PATH
+ENV PATH /root/CouchPotatoServer:$PATH
 
 VOLUME ["/data"]
 
