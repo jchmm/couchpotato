@@ -12,4 +12,4 @@ VOLUME ["/data"]
 
 expose 5050
 
-CMD ["CouchPotato.py","--data_dir","/data"]
+CMD ["CouchPotato.py","--data_dir","/data","--console_log"]
